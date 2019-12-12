@@ -432,7 +432,7 @@ fn_deps_build_debian(){
 		array_deps_required+=( unzip )
 	# Wurm: Unlimited
 	elif [ "${shortname}" == "wurm" ]; then
-		array_deps_required+=( xvfb )
+		array_deps_required+=( xvfb openjfx )
 	elif [ "${shortname}" == "pstbs" ]; then
 		array_deps_required+=( libgconf-2-4 )
 	fi
@@ -537,7 +537,7 @@ fn_deps_build_redhat(){
 	elif [ "${shortname}" == "unt" ]; then
 		array_deps_required+=( mono-complete )
 	elif [ "${shortname}" == "wurm" ]; then
-		array_deps_required+=( xorg-x11-server-Xvfb )
+		array_deps_required+=( xorg-x11-server-Xvfb openjfx )
 	elif [ "${shortname}" == "pstbs" ]; then
 		array_deps_required+=( GConf2 )
 	fi
